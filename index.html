@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Violetflame124610</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EVF%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">VF</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img id="profilePic" src="https://github.com/Violetflame124610.png" alt="Profile Picture">
+            </div>
+        </div>
+        <h1 class="name" id="userName">Violetflame124610</h1>
+        <div class="button-group">
+            <a href="projects.html" class="btn btn-secondary">View Projects</a>
+        </div>
+        <div class="bio">
+            <p>
+                Welcome to my portfolio! I'm a passionate developer who loves creating innovative solutions and exploring new technologies. 
+                My journey in programming has been filled with exciting challenges and continuous learning. 
+                I believe in writing clean, efficient code and building projects that make a real impact.
+                
+                When I'm not coding, you can find me contributing to open-source projects, learning new frameworks, 
+                or experimenting with the latest tech trends. I'm always eager to collaborate on interesting projects 
+                and connect with fellow developers.
+                
+                Feel free to explore my projects and reach out if you'd like to work together or just chat about technology!
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Load user profile on home page (only name and profile pic, not bio)
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchUserProfileBasic();
+        });
+    </script>
+</body>
+</html>
